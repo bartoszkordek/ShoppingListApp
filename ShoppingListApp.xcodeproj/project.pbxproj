@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9CF76D8B2787405A0069D2DA /* ShoppingListAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF76D8A2787405A0069D2DA /* ShoppingListAppApp.swift */; };
-		9CF76D8D2787405A0069D2DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF76D8C2787405A0069D2DA /* ContentView.swift */; };
+		9CF76D8B2787405A0069D2DA /* ShoppingListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF76D8A2787405A0069D2DA /* ShoppingListApp.swift */; };
+		9CF76D8D2787405A0069D2DA /* ShoppingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF76D8C2787405A0069D2DA /* ShoppingListView.swift */; };
 		9CF76D8F2787405B0069D2DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF76D8E2787405B0069D2DA /* Assets.xcassets */; };
 		9CF76D922787405B0069D2DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF76D912787405B0069D2DA /* Preview Assets.xcassets */; };
 		9CF76D9C2787405B0069D2DA /* ShoppingListAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF76D9B2787405B0069D2DA /* ShoppingListAppTests.swift */; };
@@ -35,8 +35,8 @@
 
 /* Begin PBXFileReference section */
 		9CF76D872787405A0069D2DA /* ShoppingListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CF76D8A2787405A0069D2DA /* ShoppingListAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListAppApp.swift; sourceTree = "<group>"; };
-		9CF76D8C2787405A0069D2DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9CF76D8A2787405A0069D2DA /* ShoppingListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListApp.swift; sourceTree = "<group>"; };
+		9CF76D8C2787405A0069D2DA /* ShoppingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListView.swift; sourceTree = "<group>"; };
 		9CF76D8E2787405B0069D2DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CF76D912787405B0069D2DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9CF76D972787405B0069D2DA /* ShoppingListAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingListAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,8 +94,8 @@
 		9CF76D892787405A0069D2DA /* ShoppingListApp */ = {
 			isa = PBXGroup;
 			children = (
-				9CF76D8A2787405A0069D2DA /* ShoppingListAppApp.swift */,
-				9CF76D8C2787405A0069D2DA /* ContentView.swift */,
+				9CF76D8A2787405A0069D2DA /* ShoppingListApp.swift */,
+				9CF76D8C2787405A0069D2DA /* ShoppingListView.swift */,
 				9CF76D8E2787405B0069D2DA /* Assets.xcassets */,
 				9CF76D902787405B0069D2DA /* Preview Content */,
 			);
@@ -257,8 +257,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CF76D8D2787405A0069D2DA /* ContentView.swift in Sources */,
-				9CF76D8B2787405A0069D2DA /* ShoppingListAppApp.swift in Sources */,
+				9CF76D8D2787405A0069D2DA /* ShoppingListView.swift in Sources */,
+				9CF76D8B2787405A0069D2DA /* ShoppingListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
