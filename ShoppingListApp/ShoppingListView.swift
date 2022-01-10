@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ShoppingListView: View {
+    var shoppingList = ShoppingList();
     var body: some View {
         Text("Hello, world!")
             .padding()
