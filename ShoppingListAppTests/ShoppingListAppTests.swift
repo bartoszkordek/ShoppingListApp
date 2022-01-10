@@ -9,19 +9,36 @@ import XCTest
 @testable import ShoppingListApp
 
 class ShoppingListAppTests: XCTestCase {
+    
+    var product1 = Product();
+    var product2 = Product();
+    var product3 = Product();
+    
+    var shoppingList = ShoppingList();
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        product1 = Product(name: "Apple", units: 1);
+        product2 = Product(name: "Pear", units: 2);
+        product3 = Product(name: "Banana", units: 4);
     }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testShouldAddProductsToShoppingList() throws {
+        //when
+        shoppingList.addProduct(product: product1);
+        shoppingList.addProduct(product: product2);
+        shoppingList.addProduct(product: product3);
+        
+        //then
+        XCTAssertTrue(!shoppingList.getShoppingList().isEmpty, "Shopping list not empty equality test failed");
+        print(shoppingList.getShoppingList());
+        print(shoppingList.getShoppingList().count);
+        XCTAssertTrue(shoppingList.getShoppingList().count == 3, "Shopping list counter equality test failed");
     }
+    
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.

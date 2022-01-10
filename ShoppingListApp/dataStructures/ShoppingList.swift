@@ -10,14 +10,21 @@ import Foundation
 public struct ShoppingList{
     
     private var shoppingList = [Product()];
+    
+    init() {
+        shoppingList.removeAll();
+    }
 
     public func getShoppingList() -> [Product] {
         return shoppingList;
     }
 
-    public func addProduct(productName: String) -> Bool {
-        if(productName == nil || productName.isEmpty){ return true;}
-        return false;
+    public mutating func addProduct(product: Product) -> Bool {
+        let productName = product.getName();
+        if(productName == nil || productName.isEmpty){ return false;}
+        if(isProductDuplicated(productName: productName)){ return false;}
+        shoppingList.append(product);
+        return true;
     }
 
     private mutating func delete(at offsets: IndexSet) {
