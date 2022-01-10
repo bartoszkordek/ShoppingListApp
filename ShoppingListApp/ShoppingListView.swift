@@ -20,3 +20,8 @@ struct ShoppingListView_Previews: PreviewProvider {
         ShoppingListView()
     }
 }
+
+private func isProductNameEmpty(productName: String) -> Bool {
+    if(productName == nil || productName.isEmpty){ return true;}
+    return false;
+}

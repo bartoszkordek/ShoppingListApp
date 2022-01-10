@@ -9,30 +9,24 @@ import Foundation
 
 public struct ShoppingList{
     
-    private var shoppingList = ["Bread", "Pepsi", "Beer"];
+    private var shoppingList = [Product()];
 
-    public func getShoppingList() -> [String] {
+    public func getShoppingList() -> [Product] {
         return shoppingList;
     }
 
-    public func addProduct(product: String) -> Bool {
-        if(product == nil || product.isEmpty){ return true;}
+    public func addProduct(productName: String) -> Bool {
+        if(productName == nil || productName.isEmpty){ return true;}
         return false;
     }
 
     private mutating func delete(at offsets: IndexSet) {
         shoppingList.remove(atOffsets: offsets);
     }
-
     
-    private func isProductDuplicated(product: String) -> Bool {
-            if(shoppingList.contains(product)){ return true;}
-            return false;
-    }
-
-    private func isProductNameEmpty(product: String) -> Bool {
-            if(product == nil || product.isEmpty){ return true;}
-            return false;
+    private func isProductDuplicated(productName: String) -> Bool {
+        if(shoppingList.first{$0.getName() == productName} != nil){ return true;}
+        return false;
     }
     
 }

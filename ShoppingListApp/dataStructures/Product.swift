@@ -12,20 +12,31 @@ public struct Product{
     var name = "";
     var isChecked = false;
     
+    init() {
+    }
+    
     init(name: String) {
         self.name = name;
         self.isChecked = false;
     }
     
-    public mutating func updateName(name: String){
+    public func getName() -> String {
+        return name;
+    }
+    
+    public mutating func setName(name: String){
         self.name = name;
     }
     
-    public mutating func changeToChecked(){
+    public func getChecked() -> Bool {
+        return isChecked;
+    }
+    
+    public mutating func setToChecked(){
         self.isChecked = true;
     }
     
-    public mutating func changeToUnchecked(){
+    public mutating func setToUnchecked(){
         self.isChecked = false;
     }
     
