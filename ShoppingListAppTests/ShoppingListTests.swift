@@ -35,6 +35,13 @@ class ShoppingListTests: XCTestCase {
         //then
         XCTAssertTrue(!shoppingList.getShoppingList().isEmpty, "Shopping list not empty equality test failed");
         XCTAssertTrue(shoppingList.getShoppingList().count == 3, "Shopping list counter equality test failed");
+        
+        XCTAssertTrue(shoppingList.getShoppingList()[0].getName() == "Apple", "Shopping list [0] name equality test failed");
+        XCTAssertTrue(shoppingList.getShoppingList()[0].getUnits() == 1, "Shopping list [0] units equality test failed");
+        XCTAssertTrue(shoppingList.getShoppingList()[1].getName() == "Pear", "Shopping list [1] name equality test failed");
+        XCTAssertTrue(shoppingList.getShoppingList()[1].getUnits() == 2, "Shopping list [1] units equality test failed");
+        XCTAssertTrue(shoppingList.getShoppingList()[2].getName() == "Banana", "Shopping list [2] name equality test failed");
+        XCTAssertTrue(shoppingList.getShoppingList()[2].getUnits() == 4, "Shopping list [2] units equality test failed");
     }
     
     func testShouldNotAddProductToShoppingListWhenEmptyName() throws {
@@ -72,7 +79,6 @@ class ShoppingListTests: XCTestCase {
         //then
         XCTAssertTrue(!shoppingList.getShoppingList().isEmpty, "Shopping list not empty equality test failed");
         XCTAssertTrue(shoppingList.getShoppingList().count == 2, "Shopping list counter equality test failed");
-        print(shoppingList.getShoppingList());
         XCTAssertTrue(shoppingList.getShoppingList()[0].getName() == "Apple", "Shopping list [0] name equality test failed");
         XCTAssertTrue(shoppingList.getShoppingList()[0].getUnits() == 1, "Shopping list [0] units equality test failed");
         XCTAssertTrue(shoppingList.getShoppingList()[1].getName() == "Banana", "Shopping list [1] name equality test failed");
