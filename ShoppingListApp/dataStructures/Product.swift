@@ -9,14 +9,14 @@ import Foundation
 
 public struct Product{
     
-    var name = "";
-    var units = 0;
-    var isChecked = false;
+    private var name = "";
+    private var units = 0;
+    private var isChecked = false;
     
-    init() {
+    public init() {
     }
     
-    init(name: String, units: Int) {
+    public init(name: String, units: Int) {
         self.name = name;
         self.units = units;
         self.isChecked = false;

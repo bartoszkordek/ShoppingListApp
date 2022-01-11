@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		9C7AE0F4278CD85F00B8C498 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7AE0F3278CD85F00B8C498 /* Product.swift */; };
 		9C7AE0F6278CE51700B8C498 /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7AE0F5278CE51700B8C498 /* ProductTests.swift */; };
-		9C7AE0F8278CE74E00B8C498 /* ShoppingListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7AE0F7278CE74E00B8C498 /* ShoppingListTests.swift */; };
+		9C7AE0F8278CE74E00B8C498 /* ShoppingListAppIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7AE0F7278CE74E00B8C498 /* ShoppingListAppIntegrationTests.swift */; };
 		9CF76D8B2787405A0069D2DA /* ShoppingListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF76D8A2787405A0069D2DA /* ShoppingListApp.swift */; };
 		9CF76D8D2787405A0069D2DA /* ShoppingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF76D8C2787405A0069D2DA /* ShoppingListView.swift */; };
 		9CF76D8F2787405B0069D2DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF76D8E2787405B0069D2DA /* Assets.xcassets */; };
 		9CF76D922787405B0069D2DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF76D912787405B0069D2DA /* Preview Assets.xcassets */; };
-		9CF76D9C2787405B0069D2DA /* ShoppingListAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF76D9B2787405B0069D2DA /* ShoppingListAppTests.swift */; };
+		9CF76D9C2787405B0069D2DA /* ShoppingListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF76D9B2787405B0069D2DA /* ShoppingListTests.swift */; };
 		9CF76DA62787405B0069D2DA /* ShoppingListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF76DA52787405B0069D2DA /* ShoppingListAppUITests.swift */; };
 		9CF76DA82787405B0069D2DA /* ShoppingListAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF76DA72787405B0069D2DA /* ShoppingListAppUITestsLaunchTests.swift */; };
 		9CF76DB727874DA20069D2DA /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF76DB627874DA20069D2DA /* ShoppingList.swift */; };
@@ -40,14 +40,14 @@
 /* Begin PBXFileReference section */
 		9C7AE0F3278CD85F00B8C498 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		9C7AE0F5278CE51700B8C498 /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
-		9C7AE0F7278CE74E00B8C498 /* ShoppingListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListTests.swift; sourceTree = "<group>"; };
+		9C7AE0F7278CE74E00B8C498 /* ShoppingListAppIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListAppIntegrationTests.swift; sourceTree = "<group>"; };
 		9CF76D872787405A0069D2DA /* ShoppingListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF76D8A2787405A0069D2DA /* ShoppingListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListApp.swift; sourceTree = "<group>"; };
 		9CF76D8C2787405A0069D2DA /* ShoppingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListView.swift; sourceTree = "<group>"; };
 		9CF76D8E2787405B0069D2DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CF76D912787405B0069D2DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9CF76D972787405B0069D2DA /* ShoppingListAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingListAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CF76D9B2787405B0069D2DA /* ShoppingListAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListAppTests.swift; sourceTree = "<group>"; };
+		9CF76D9B2787405B0069D2DA /* ShoppingListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListTests.swift; sourceTree = "<group>"; };
 		9CF76DA12787405B0069D2DA /* ShoppingListAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingListAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF76DA52787405B0069D2DA /* ShoppingListAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListAppUITests.swift; sourceTree = "<group>"; };
 		9CF76DA72787405B0069D2DA /* ShoppingListAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -122,9 +122,9 @@
 		9CF76D9A2787405B0069D2DA /* ShoppingListAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				9CF76D9B2787405B0069D2DA /* ShoppingListAppTests.swift */,
+				9CF76D9B2787405B0069D2DA /* ShoppingListTests.swift */,
 				9C7AE0F5278CE51700B8C498 /* ProductTests.swift */,
-				9C7AE0F7278CE74E00B8C498 /* ShoppingListTests.swift */,
+				9C7AE0F7278CE74E00B8C498 /* ShoppingListAppIntegrationTests.swift */,
 			);
 			path = ShoppingListAppTests;
 			sourceTree = "<group>";
@@ -288,8 +288,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C7AE0F8278CE74E00B8C498 /* ShoppingListTests.swift in Sources */,
-				9CF76D9C2787405B0069D2DA /* ShoppingListAppTests.swift in Sources */,
+				9C7AE0F8278CE74E00B8C498 /* ShoppingListAppIntegrationTests.swift in Sources */,
+				9CF76D9C2787405B0069D2DA /* ShoppingListTests.swift in Sources */,
 				9C7AE0F6278CE51700B8C498 /* ProductTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

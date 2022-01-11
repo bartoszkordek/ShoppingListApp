@@ -11,7 +11,7 @@ public struct ShoppingList{
     
     private var shoppingList = [Product()];
     
-    init() {
+    public init() {
         shoppingList.removeAll();
     }
 
@@ -27,8 +27,10 @@ public struct ShoppingList{
         return true;
     }
 
-    private mutating func delete(at offsets: IndexSet) {
-        shoppingList.remove(atOffsets: offsets);
+    public mutating func delete(index: Int) {
+        if(self.shoppingList.count-1 >= index){
+            shoppingList.remove(at: index);
+        }
     }
     
     private func isProductDuplicated(productName: String) -> Bool {
