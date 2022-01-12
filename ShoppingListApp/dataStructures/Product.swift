@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Product: Identifiable{
+public struct Product: Identifiable, Hashable{
     
     public let id = UUID();
     private var name = "";

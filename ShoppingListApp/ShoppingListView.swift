@@ -8,11 +8,28 @@
 import SwiftUI
 
 struct ShoppingListView: View {
-    var shoppingList = ShoppingList();
+    @State var shoppingList = ShoppingList();
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                ForEach(shoppingList.getShoppingList(), id: \.self) { product in
+                    Text(product.getName())
+                }
+            }
+            .navigationBarTitle(Text("Products"))
+            
+            .navigationBarItems(trailing: Button(action: {
+                self.addRow()
+            }) {
+                Image(systemName: "plus")
+            })
+        }
     }
+    
+    private func addRow() {
+        self.shoppingList.addProduct(product: Product(name: "Banana", units: 9));
+        }
 }
 
 struct ShoppingListView_Previews: PreviewProvider {
