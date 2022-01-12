@@ -7,8 +7,9 @@
 
 import Foundation
 
-public struct Product{
+public struct Product: Identifiable{
     
+    public let id = UUID();
     private var name = "";
     private var units = 0;
     private var isChecked = false;
