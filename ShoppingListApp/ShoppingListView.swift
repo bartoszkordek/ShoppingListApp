@@ -63,7 +63,6 @@ struct ShoppingListView: View {
         self.shoppingList.addProduct(product: Product(name: name, units: (Int(units) ?? 0)));
         addedProductName = "";
         addedProductUnits = "";
-        
     }
     
     private func updateChecked(productId: UUID, isChecked: Bool){

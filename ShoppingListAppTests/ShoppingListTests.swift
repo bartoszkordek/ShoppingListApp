@@ -83,7 +83,20 @@ class ShoppingListTests: XCTestCase {
         XCTAssertTrue(shoppingList.getShoppingList()[0].getUnits() == 1, "Shopping list [0] units equality test failed");
         XCTAssertTrue(shoppingList.getShoppingList()[1].getName() == "Banana", "Shopping list [1] name equality test failed");
         XCTAssertTrue(shoppingList.getShoppingList()[1].getUnits() == 4, "Shopping list [1] units equality test failed");
+    }
+    
+    func testShouldUpdateCheckedStatus() throws {
+        //when
+        shoppingList.addProduct(product: product1);
+        shoppingList.addProduct(product: product2);
+        shoppingList.addProduct(product: product3);
+        let product2Id = product2.id;
+        shoppingList.updateChecked(productId: product2Id, isChecked: true);
         
+        //then
+        XCTAssertTrue(shoppingList.getShoppingList()[0].getChecked() == false, "Shopping list [0] checked status equality test failed");
+        XCTAssertTrue(shoppingList.getShoppingList()[1].getChecked() == true, "Shopping list [1] checked status equality test failed");
+        XCTAssertTrue(shoppingList.getShoppingList()[2].getChecked() == false, "Shopping list [2] checked status equality test failed");
     }
     
 
