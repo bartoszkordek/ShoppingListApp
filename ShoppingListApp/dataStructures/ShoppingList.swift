@@ -33,6 +33,21 @@ public struct ShoppingList{
         }
     }
     
+    public mutating func updateChecked(productId: UUID, isChecked: Bool){
+        var iter = 0;
+        for product in shoppingList {
+            if(product.id == productId) {
+                if(isChecked) {
+                    shoppingList[iter].setToChecked();
+                } else {
+                    shoppingList[iter].setToUnchecked();
+                }
+                return;
+            }
+            iter += 1;
+        }
+    }
+    
     private func isProductDuplicated(productName: String) -> Bool {
         if(shoppingList.first{$0.getName() == productName} != nil){ return true;}
         return false;
